@@ -1,0 +1,26 @@
+.top-nav {
+  background-color: $topNav-background;
+  &__list {
+    list-style: none;
+    margin: auto 0px;
+    padding: 5px 0px;
+    &--list-item {
+      padding: 0 15px;
+      a {
+        display: flex;
+        span {
+          padding-right: 5px;
+          margin-top: 6px;
+        }
+      }
+      a:link,
+      a:visited {
+        color: $color-white;
+      }
+      a:hover {
+        text-decoration: none;
+        color: darken($color-white, 15%);
+      }
+    }
+  }
+}
