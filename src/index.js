@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "bootstrap-css-only";
+import "../node_modules/antd/dist/antd.css";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
