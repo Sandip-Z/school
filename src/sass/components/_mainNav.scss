@@ -1,0 +1,35 @@
+.mainNav {
+  position: relative;
+  background-color: $topNav-background;
+  color: $color-white;
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    &--item {
+      padding: 15px 25px;
+      &:hover {
+        background-color: $color-white;
+        color: $topNav-background;
+        cursor: pointer;
+      }
+    }
+  }
+  &__description {
+    position: absolute;
+    top: 52px;
+    background: red;
+    width: 100%;
+    ul {
+      list-style: none;
+      li {
+        padding: 5px;
+        text-transform: capitalize;
+        a:link,
+        a:visited {
+          color: white;
+        }
+      }
+    }
+  }
+}

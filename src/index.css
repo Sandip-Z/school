@@ -6,7 +6,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace; }
@@ -30,3 +31,31 @@ code {
       .top-nav__list--list-item a:hover {
         text-decoration: none;
         color: #cfcfcf; }
+
+.mainNav {
+  position: relative;
+  background-color: #004570;
+  color: whitesmoke; }
+  .mainNav__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around; }
+    .mainNav__list--item {
+      padding: 15px 25px; }
+      .mainNav__list--item:hover {
+        background-color: whitesmoke;
+        color: #004570;
+        cursor: pointer; }
+  .mainNav__description {
+    position: absolute;
+    top: 52px;
+    background: red;
+    width: 100%; }
+    .mainNav__description ul {
+      list-style: none; }
+      .mainNav__description ul li {
+        padding: 5px;
+        text-transform: capitalize; }
+        .mainNav__description ul li a:link,
+        .mainNav__description ul li a:visited {
+          color: white; }
