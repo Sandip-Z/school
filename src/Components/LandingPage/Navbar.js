@@ -23,7 +23,7 @@ const Navbar = () => {
   const renderNavBarItem = navBarListItem.map((item) => (
     <li
       key={item.id}
-      className="mainNav__list--item"
+      className={`mainNav__list--item ${item.id === activeNav ? "active" : ""}`}
       onMouseEnter={() => handleMouseOver(item.id)}
       onMouseLeave={() => handleMouseOut(item.id)}
     >
@@ -47,12 +47,19 @@ const Navbar = () => {
           className="img img-responsive img-logo"
         />
       </div>
-      <nav className="mainNav">
+      <nav
+        className="mainNav"
+        onMouseLeave={() => {
+          setActiveNav("");
+        }}
+      >
         <ul className="mainNav__list">{renderNavBarItem}</ul>
         <div
           className={`mainNav__description ${descriptionDiplayClassName}`}
           onMouseEnter={() => setDescriptionDisplayClassName("d-block")}
-          onMouseLeave={() => setDescriptionDisplayClassName("d-none")}
+          onMouseLeave={() => {
+            setDescriptionDisplayClassName("d-none");
+          }}
         >
           <NavDescription active={activeNav} />
         </div>
