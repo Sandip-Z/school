@@ -40,7 +40,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center p-3">
         <img
           src={logo}
           alt="Nepal College of Information Technology"

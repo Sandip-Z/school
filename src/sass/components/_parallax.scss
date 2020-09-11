@@ -1,0 +1,24 @@
+.parallax {
+  height: 251px;
+  //   border: 1px solid red;
+  background-size: cover;
+  background-attachment: fixed;
+  //   clip-path: polygon(3% 0, 100% 0%, 97% 100%, 0% 100%);
+
+  h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: $topNav-background;
+    text-shadow: 0px 1px 9px rgba(150, 150, 150, 0.35);
+  }
+
+  h5 {
+    word-spacing: 5px;
+    line-height: 35px;
+    text-align: center;
+    // color: invert($color-skyblue);
+    color: $topNav-background;
+    text-shadow: 0px 1px 9px rgba(150, 150, 150, 0.35);
+  }
+}
