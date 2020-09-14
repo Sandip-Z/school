@@ -62,6 +62,8 @@ code {
         .mainNav__description ul li a:link,
         .mainNav__description ul li a:visited {
           color: white; }
+        .mainNav__description ul li a:hover {
+          text-decoration: underline; }
 
 .parallax {
   height: 251px;
