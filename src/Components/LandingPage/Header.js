@@ -1,19 +1,9 @@
 import React from "react";
-
+import Carousel from "./Carousel";
 const Header = () => {
   return (
     <div className="header">
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
-      <p>This is a header</p>
+      <Carousel />
     </div>
   );
 };

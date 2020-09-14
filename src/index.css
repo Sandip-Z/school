@@ -53,7 +53,9 @@ code {
     top: 52px;
     background: #003557;
     width: 100%;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.678); }
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.678);
+    z-index: 2;
+    transition: display 1s; }
     .mainNav__description ul {
       list-style: none; }
       .mainNav__description ul li {
@@ -131,3 +133,8 @@ code {
   .proud .ant-list-items {
     display: flex !important;
     overflow-x: auto; }
+
+.header {
+  position: relative;
+  top: -14px;
+  z-index: 1; }
