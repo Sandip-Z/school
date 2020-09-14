@@ -81,6 +81,20 @@ code {
     text-align: center;
     color: #004570;
     text-shadow: 0px 1px 9px rgba(150, 150, 150, 0.35); }
+  .parallax button {
+    display: flex;
+    margin: auto;
+    border: 0px;
+    padding: 10px 25px;
+    background-color: #004570;
+    color: whitesmoke;
+    box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s; }
+    .parallax button:hover {
+      background-color: #00558a;
+      transition: all 0.2s;
+      transform: translateY(-5%);
+      box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.5); }
 
 .border-diamond {
   display: inline-block;
