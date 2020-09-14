@@ -94,3 +94,20 @@ code {
     left: 50%;
     transform: translateX(-45%);
     font-size: 30px; }
+
+.training h3 {
+  color: #ff0909; }
+
+.training__image {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .training__image:hover {
+    box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.2); }
+  .training__image--image {
+    width: 150px;
+    margin: 0px 15px;
+    transition: all 0.2s; }
+    .training__image--image:hover {
+      transform: scale(1.2);
+      transition: all 0.2s; }
