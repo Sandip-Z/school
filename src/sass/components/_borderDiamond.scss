@@ -1,0 +1,17 @@
+.border-diamond {
+  display: inline-block;
+  position: relative;
+  border-bottom: 2px solid rgb(32, 32, 32);
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 15px;
+
+  &__diamond {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-45%);
+    font-size: 30px;
+  }
+}

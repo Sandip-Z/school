@@ -1,5 +1,5 @@
 import React from "react";
-
+import BorderDiamond from "../BorderDiamond";
 const Parallax = ({ background, text, buttonText, heading }) => {
   return (
     <div
@@ -9,9 +9,9 @@ const Parallax = ({ background, text, buttonText, heading }) => {
       }}
     >
       <div>
-        <h3>{heading || "About us"}</h3>
+        <BorderDiamond heading="About us" />
         <h5>{text}</h5>
-        {buttonText}
+        <button className="About-us-button">{buttonText}</button>
       </div>
     </div>
   );

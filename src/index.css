@@ -79,3 +79,18 @@ code {
     text-align: center;
     color: #004570;
     text-shadow: 0px 1px 9px rgba(150, 150, 150, 0.35); }
+
+.border-diamond {
+  display: inline-block;
+  position: relative;
+  border-bottom: 2px solid #202020;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 15px; }
+  .border-diamond__diamond {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-45%);
+    font-size: 30px; }
