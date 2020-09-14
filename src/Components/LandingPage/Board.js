@@ -1,12 +1,14 @@
 import React from "react";
 import { Tabs } from "antd";
+import AllEvents from "./Board/AllEvents";
+import Proud from "./Board/Proud";
 
 const Board = () => {
   const { TabPane } = Tabs;
   return (
-    <div className="row">
-      <div className="col-lg-4 m-3">
-        <Tabs defaultActiveKey="notice_board">
+    <div className="row mb-5">
+      <div className="col-lg-4 p-3">
+        <Tabs defaultActiveKey="notice_board" size="large">
           <TabPane tab="Notice Board" key="Notice Board">
             Content of Tab Pane 1
           </TabPane>
@@ -15,8 +17,12 @@ const Board = () => {
           </TabPane>
         </Tabs>
       </div>
-      <div className="col-lg-4 m-3">proub</div>
-      <div className="col-lg-4 m-3"></div>
+      <div className="col-lg-4 proud p-3">
+        <Proud />
+      </div>
+      <div className="col-lg-4 p-3">
+        <AllEvents header={<h5>All Events</h5>} />
+      </div>
     </div>
   );
 };

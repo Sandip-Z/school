@@ -9,7 +9,7 @@ const Parallax = ({ background, text, buttonText, heading }) => {
       }}
     >
       <div>
-        <BorderDiamond heading="About us" />
+        <BorderDiamond heading={heading} />
         <h5>{text}</h5>
         <button className="About-us-button">{buttonText}</button>
       </div>

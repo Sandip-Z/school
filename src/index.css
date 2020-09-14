@@ -118,8 +118,6 @@ code {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .training__image:hover {
-    box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.2); }
   .training__image--image {
     width: 150px;
     margin: 0px 15px;
@@ -127,3 +125,9 @@ code {
     .training__image--image:hover {
       transform: scale(1.2);
       transition: all 0.2s; }
+
+.proud {
+  width: 50% !important; }
+  .proud .ant-list-items {
+    display: flex !important;
+    overflow-x: auto; }
